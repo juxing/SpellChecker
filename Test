@@ -1,0 +1,176 @@
+Script started on Tue 05 Mar 2013 02:15:31 PM EST
+bash-3.2$ ./attacker
+
+Eexcuting: ./spellChecker 
+
+hello
+hello
+<end>
+wakaka
+
+wayaka
+makara
+wamara
+Pakawa
+kawaka
+Kabaka
+wapata
+baraka
+Panaka
+Takara
+camaka
+akala
+<end>
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Input word is too long.
+aa bb  c
+
+<end>
+<quit>
+
+
+Return value: 0 (Success)
+
+Eexcuting: ./spellChecker -v
+
+My speller checker version 1.0
+
+
+Return value: 0 (Success)
+
+Eexcuting: ./spellChecker --version
+
+My speller checker version 1.0
+
+
+Return value: 0 (Success)
+
+Eexcuting: ./spellChecker -h
+
+Usage: ./spellChecker
+	[--version | -v]
+	[--help | -h]
+	[--dictionary | -d] dict
+	[--count | -c] number
+
+
+Return value: 0 (Success)
+
+Eexcuting: ./spellChecker --help
+
+Usage: ./spellChecker
+	[--version | -v]
+	[--help | -h]
+	[--dictionary | -d] dict
+	[--count | -c] number
+
+
+Return value: 0 (Success)
+
+Eexcuting: ./spellChecker -n 3
+
+wakaka
+
+wayaka
+makara
+wamara
+<end>
+
+
+Return value: 0 (Success)
+
+Eexcuting: ./spellChecker --count 5
+
+wkaka
+
+waka
+kaka
+chaka
+diaka
+osaka
+<end>
+
+
+Return value: 0 (Success)
+
+Eexcuting: ./spellChecker -d ./myDict
+
+Abandon one word.
+world
+world
+<end>
+
+
+Return value: 0 (Success)
+
+Eexcuting: ./spellChecker --dictionary ./myDict
+
+Abandon one word.
+hell
+
+<end>
+
+
+Return value: 0 (Success)
+
+Eexcuting: ./spellChecker -v -h -n 3 -d ./myDict
+
+My speller checker version 1.0
+Usage: ./spellChecker
+	[--version | -v]
+	[--help | -h]
+	[--dictionary | -d] dict
+	[--count | -c] number
+Abandon one word.
+
+
+Return value: 0 (Success)
+
+Eexcuting: ./spellChecker -n 0
+
+wkaka
+
+<end>
+
+
+Return value: 0 (Success)
+
+Eexcuting: ./spellChecker -n 3a
+
+Invalid argument for [--count | n].
+
+
+Return value: 256 (Unknown error 256)
+
+Eexcuting: ./spellChecker -d ./emptyDict
+
+The dictionary is empty.
+
+
+Return value: 256 (Unknown error 256)
+
+Eexcuting: ./spellChecker -d abcdefg
+
+wc: abcdefg: No such file or directory
+Failed to open dictionary.
+
+
+Return value: 256 (Unknown error 256)
+
+Eexcuting: ./spellChecker -n
+
+./spellChecker: option requires an argument -- n
+
+
+Return value: 6 (No such device or address)
+
+Eexcuting: ./spellChecker -d
+
+./spellChecker: option requires an argument -- d
+
+
+Return value: 6 (No such device or address)
+bash-3.2$ exit
+exit
+
+Script done on Tue 05 Mar 2013 02:18:09 PM EST
