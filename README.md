@@ -1,4 +1,8 @@
-Ming Zhang
+Spell Checker
+=================
+This is a simple spell checker program, it returns the words if you type in the right words in dictionary, or returns 
+all hint words based on your input, the search algorithm is hashtable.
+
 
 All problems are solved, using hash table.
 
